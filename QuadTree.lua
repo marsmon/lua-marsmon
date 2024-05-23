@@ -1,6 +1,6 @@
 -- @Date    : 2024-05-15 14:01:48
 -- @Author  : mars
--- @Desc    : 四叉树
+-- @Desc    : 四叉树 - 点使用空间管理
 
 local QuadTree = {}
 
