@@ -112,9 +112,9 @@ function QuadTree:query(left, top, right, bottom, result)
             v:query(left, top, right, bottom, result)
         end
     else
-        for k, v in pairs(self.objects) do
+        for id, v in pairs(self.objects) do
             if v.x > left and v.x < right and v.y > top and v.y < bottom then
-                table.insert(result, k)
+                result[id] = true
             end
         end
     end
